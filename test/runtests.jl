@@ -1,6 +1,7 @@
 using Assignment02
 using Test
 using Random
+using Suppressor
 
 @testset "Assignment02" begin
 
@@ -34,26 +35,30 @@ end
 
 @testset "Question 3" begin
     @test question3 isa Function
-    @test question3("AGGC") = 0.75
-    
+    @test question3("AGGC") == 0.75
+
 end
 
 @testset "Question 4" begin
     @test question4 isa Function
-    (rd, wr) = redirect_stdout()
     
-    question4("ATTC")
-    @test readline(rd) == "Sequence:"
-    @test readline(rd) == "ATTC"
-    @test readline(rd) == "GC Content:"
-    @test readline(rd) == "0.25"
+    out = @capture_out begin question4("ATTC") end
+    (ln1,ln2,ln3,ln4) = split(out, '\n')
+
+    @test ln1 == "Sequence:"
+    @test ln2 == "ATTC"
+    @test ln3 == "GC Content:"
+    @test ln4 == "0.25"
 
     seq = generate_sequence(20)
-    question4(seq)
-    @test readline(rd) == "Sequence:"
-    @test readline(rd) == seq
-    @test readline(rd) == "GC Content:"
-    @test readline(rd) == string((count(==('G'), seq)+count(==('C'), seq)) / 20)
+   
+    out = @capture_out begin question4(seq) end
+    (ln1,ln2,ln3,ln4) = split(out, '\n')
+
+    @test ln1 == "Sequence:"
+    @test ln2 == seq
+    @test ln3 == "GC Content:"
+    @test ln4 == string((count(==('G'), seq)+count(==('C'), seq)) / 20)
 end
 
 end # "Assignment02"()
