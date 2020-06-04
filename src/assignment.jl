@@ -84,7 +84,9 @@ end
 # and returns `true` if the argument is a String,
 # and returns `false` otherwise.
 # You should be able to run the examples in the docstring
-# and get the correct answer.
+# and get the correct answer,
+# and to run this function using `my_seq` as the argument
+# (it should return `true`).
 #
 # Hint: You haven't explicitly encountered a way to check if a type is another type.
 # Learning to search for answers is a key programming skill!
@@ -101,13 +103,16 @@ end
 # The `question3()` function has a doc string,
 # but is also incomplete. 
 # I've writtten some code to get you started,
-# complete it so that the examples work as expected in the docstring
+# complete it so that the examples work as expected in the docstring.
+# If you use this function on `my_seq`,
+# you should get the answer `0.3`
 
 """
     question3(sequence)
 
 Calculates the GC ratio of a DNA sequence.
-The GC ratio is the ratio of G and C bases divided by the total length of the sequence.
+The GC ratio is the total number of G and C bases divided by the total length of the sequence.
+For more info about GC content, see here:
 
 Example
 =======
@@ -130,6 +135,7 @@ function question3(sequence)
     end
 
     # change line to assign `seqlength` to the length of `sequence` instead of `1`
+    # If you're stuck, search for "length of string julia"
     seqlength = 1
 
     # count the number of G's
@@ -139,9 +145,10 @@ function question3(sequence)
 
     return gs + cs / seqlength # something is wrong with this line...
 end
+
 # ## Question 4
 # 
-# This should be familiar by now.
+# This process should be familiar by now.
 #
 # Hint: you do not need to re-write code if you already have it.
 # That is, don't copy any code from `question3`,

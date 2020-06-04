@@ -33,15 +33,27 @@ end
 end
 
 @testset "Question 3" begin
-    @test typeof(question3) <: AbstractString
+    @test question3 isa Function
+    @test question3("AGGC") = 0.75
+    
 end
 
 @testset "Question 4" begin
-    @test typeof(question4) <: AbstractString
+    @test question4 isa Function
+    (rd, wr) = redirect_stdout()
+    
+    question4("ATTC")
+    @test readline(rd) == "Sequence:"
+    @test readline(rd) == "ATTC"
+    @test readline(rd) == "GC Content:"
+    @test readline(rd) == "0.25"
+
+    seq = generate_sequence(20)
+    question4(seq)
+    @test readline(rd) == "Sequence:"
+    @test readline(rd) == seq
+    @test readline(rd) == "GC Content:"
+    @test readline(rd) == string((count(==('G'), seq)+count(==('C'), seq)) / 20)
 end
 
-@testset "Question 5" begin
-    @test typeof(question5) <: AbstractString
-end
-
-end # "Assignment02"
+end # "Assignment02"()
