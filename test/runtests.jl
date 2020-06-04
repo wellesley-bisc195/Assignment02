@@ -36,7 +36,6 @@ end
 @testset "Question 3" begin
     @test question3 isa Function
     @test question3("AGGC") == 0.75
-
 end
 
 @testset "Question 4" begin
