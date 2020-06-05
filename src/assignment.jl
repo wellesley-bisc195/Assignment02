@@ -14,6 +14,12 @@
 # If you _do_ change it to figure out what it's doing,
 # make sure you change it back or your assignment may not work correctly
 
+## To view additional instructions for this assignment, #jl
+## see https://wellesley-bisc195.github.io/BISC195.jl/stable/Assignments/assignment02.html #jl
+
+## To view a rendered version of this document, #jl
+## see https://wellesley-bisc195.github.io/BISC195.jl/stable/Assignments/assignment02_code.html #jl
+
 using Random
 Random.seed!(42)
 
@@ -64,15 +70,13 @@ question1 = ""
 Checks if `sequence` is a String.
 
 Example
-=======
+≡≡≡≡≡≡≡≡≡
 
-```julia
-julia> question2("hello")
-true
+    julia> question2("hello")
+    true
 
-julia> question2(1001)
-false
-```
+    julia> question2(1001)
+    false
 """
 function question2()
     # put your code here
@@ -115,18 +119,16 @@ The GC ratio is the total number of G and C bases divided by the total length of
 For more info about GC content, see here:
 
 Example
-=======
+≡≡≡≡≡≡≡≡≡≡
 
-```julia
-julia> question3("AATG")
-0.25
+    julia> question3("AATG")
+    0.25
 
-julia> question3("CCCGG")
-1.0
+    julia> question3("CCCGG")
+    1.0
 
-julia> question3("ATTA")
-0.0
-```
+    julia> question3("ATTA")
+    0.0
 """
 function question3(sequence)
     # throw an error if the string contains anything other than ACGT
@@ -161,21 +163,19 @@ Calculates the GC content of a DNA sequence
 and prints it to the screen.
 
 Example
-=======
+≡≡≡≡≡≡≡≡≡≡
 
-```julia
-julia> question4("AATC")
-Sequence: 
-AATC
-GC Content:
-0.25
+    julia> question4("AATC")
+    Sequence: 
+    AATC
+    GC Content:
+    0.25
 
-julia> question4("CCCGG")
-Sequence:
-CCCGG
-GC Content:
-1.0
-```
+    julia> question4("CCCGG")
+    Sequence:
+    CCCGG
+    GC Content:
+    1.0
 """
 function question4(sequence)
     # Your code here
