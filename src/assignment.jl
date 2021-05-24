@@ -15,10 +15,10 @@
 # make sure you change it back or your assignment may not work correctly
 
 ## To view additional instructions for this assignment, #jl
-## see https://wellesley-bisc195.github.io/BISC195.jl/stable/Assignments/assignment02.html #jl
+## see https://wellesley-bisc195.github.io/Assignments/assignment02.html #jl
 
 ## To view a rendered version of this document, #jl
-## see https://wellesley-bisc195.github.io/BISC195.jl/stable/Assignments/assignment02_code.html #jl
+## see https://wellesley-bisc195.github.io/Assignments/assignment02/#assignment02_code #jl
 
 using Random
 Random.seed!(42)
