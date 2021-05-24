@@ -44,7 +44,7 @@ question1 = ""
 
 # Hint2: If you're having trouble, 
 # note that your answer should not contain quotes.
-# Eg. if you thing that `seq` has the type `MyType`,
+# Eg. if you think that `seq` has the type `MyType`,
 # your code should read `question1 = MyType` and not `question1 = "MyType"`
 
 # ## Question 2
