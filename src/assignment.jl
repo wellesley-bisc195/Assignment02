@@ -15,10 +15,10 @@
 # make sure you change it back or your assignment may not work correctly
 
 ## To view additional instructions for this assignment, #jl
-## see https://wellesley-bisc195.github.io/Assignments/assignment02.html #jl
+## see https://wellesley-bisc195.github.io/assignments/Assignment02 #jl
 
 ## To view a rendered version of this document, #jl
-## see https://wellesley-bisc195.github.io/Assignments/assignment02/#assignment02_code #jl
+## see https://wellesley-bisc195.github.io/assignments/Assignment02/#assignment02_code #jl
 
 using Random
 Random.seed!(42)
@@ -77,6 +77,11 @@ Example
 
     julia> question2(1001)
     false
+
+    julia> if question2("I'm a string!")
+               println("yeah, that was a string")
+           end
+    yeah, that was a string
 """
 function question2()
     ## put your code here
@@ -116,7 +121,7 @@ end
 
 Calculates the GC ratio of a DNA sequence.
 The GC ratio is the total number of G and C bases divided by the total length of the sequence.
-For more info about GC content, see here:
+For more info about GC content, see here: https://en.wikipedia.org/wiki/GC-content
 
 Example
 ≡≡≡≡≡≡≡≡≡≡

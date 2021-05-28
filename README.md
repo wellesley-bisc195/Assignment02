@@ -1,4 +1,4 @@
-# Assignment 02 - Lesson Name
+# Assignment 02 - Types and Functions
 
 [![Assignment 02 - Repository](https://img.shields.io/badge/Assignment02-Repository-blue?style=for-the-badge)](https://classroom.github.com/a/4FgCLmLn)
 [![Assignment 02 - Description](https://img.shields.io/badge/02-Description-blue?style=for-the-badge)](https://wellesley-bisc195.github.io/assignments/Assignment02)
