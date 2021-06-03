@@ -234,19 +234,20 @@ ce_2_3_2 = Float64
 Calculates the price of books, given some list price, discount rate,
 and number of books ordered.
 
-```julia
-julia> bookprice(24.95, 0.4, 60)
-# this should be the same answer you got for `c_2_3_2`
+Example
+≡≡≡≡≡≡≡≡≡≡
 
-julia> bookprice(24.95, 0.4, 1)
-17.97
+    julia> bookprice(24.95, 0.4, 60)
+    # this should be the same answer you got for `c_2_3_2`
 
-julia> bookprice(24.95, 0.4, 2)
-33.69
+    julia> bookprice(24.95, 0.4, 1)
+    17.97
 
-julia> bookprice(1, 0, 1)
-4.0
-```
+    julia> bookprice(24.95, 0.4, 2)
+    33.69
+
+    julia> bookprice(1, 0, 1)
+    4.0
 """
 function bookprice(list, discount, count)
     ## your code here
