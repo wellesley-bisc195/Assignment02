@@ -60,4 +60,22 @@ end
     @test ln4 == string((count(==('G'), seq)+count(==('C'), seq)) / 20)
 end
 
+@testset "Question 5" begin
+    @test Assignment02.ce_2_2_1 isa Bool
+    @test !Assignment02.ce_2_2_1 
+    @test Assignment02.ce_2_2_2 isa Bool
+    @test Assignment02.ce_2_2_2 
+    @test Assignment02.ce_2_3_1 isa Float64
+    @test isapprox(Assignment02.ce_2_3_1, 4 / 3 * π * 5^2, atol = 1e-2)
+    @test Assignment02.ce_2_3_2 isa Float64
+    @test isapprox(Assignment02.ce_2_3_2, (24.95 * 0.6) * 60 + 3 + 59 * 0.75, atol = 1e-2)
+end
+
+@testset "Question 6" begin
+    @test isapprox(bookprice(24.95, 0.4, 60), Assignment02.ce_2_3_2, atol=1e-2)
+    @test isapprox(bookprice(24.95, 0.4, 1), 17.97)
+    @test isapprox(bookprice(24.95, 0.4, 2), 33.69)
+    @test isapprox(bookprice(1, 0, 1), 4.0)
+end
+
 end # "Assignment02"()
