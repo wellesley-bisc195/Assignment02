@@ -207,16 +207,16 @@ ce_2_2_1 = Bool
 ce_2_2_2 = Bool
 
 # > The volume of a sphere with radius `r` is `4/3πr^3`.
-# > What is the volume of a sphere with radius `5`?
+# What is the volume of a sphere with radius `5`?
 #
 # Assign the variable to the correct answer
 
 ce_2_3_1 = Float64
 
-# > Suppose the cover price of a book is \$24.95,
-# > but bookstores get a 40 % discount.
-# > Shipping costs $ 3 for the first copy and 75 cents for each additional copy.
-# > What is the total wholesale cost for 60 copies?
+# > Suppose the cover price of a book is 24.95,
+# but bookstores get a 40 % discount.
+# Shipping costs $ 3 for the first copy and 75 cents for each additional copy.
+# What is the total wholesale cost for 60 copies?
 # 
 # Assign the variable to the correct answer.
 
